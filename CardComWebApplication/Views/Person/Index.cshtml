@@ -1,0 +1,46 @@
+﻿@model List<CardComWebApplication.Models.Domain.Person>
+
+
+@{
+}
+<h1>Person List</h1>
+<li class="nav-item">
+	<a class="nav-link text-dark" asp-area="" asp-controller="Person" asp-action="Add">Add Person</a>
+</li>
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>E-mail</th>
+			<th>Date of Birth</th>
+			<th>Gender</th>
+			<th>Phone</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (Model != null)
+		{
+			@foreach (var person in Model)
+			{
+				<tr>
+					<td>@person.ID</td>
+					<td>@person.Name</td>
+					<td>@person.Email</td>
+					<td>@person.Birthdate</td>
+					<td>@person.Gender</td>
+					<td>@person.Phone</td>s
+					<td><a href="Person/Edit/@person.ID">Edit Person</a></td>
+					<td><a href="Person/Delete/@person.ID">Delete person</a></td>
+
+				</tr>
+			}
+		}
+		else
+		{
+			<p>No Person available</p>
+		}
+	</tbody>
+</table>
+
+

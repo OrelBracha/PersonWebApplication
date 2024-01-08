@@ -1,0 +1,27 @@
+﻿@model CardComWebApplication.Models.Domain.Person
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Person</h4>
+    <hr />
+    <div>
+        <p>ID: @Model.ID</p>
+        <p>Name: @Model.Name</p>
+        <p>Email: @Model.Email</p>
+        <p>Birth Date: @Model.Birthdate</p>
+        <p>Gender: @Model.Gender</p>
+        <p>Phone: @Model.Phone</p>
+    </div>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

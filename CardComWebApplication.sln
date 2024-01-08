@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardComWebApplication", "CardComWebApplication\CardComWebApplication.csproj", "{80D068D2-C5F7-4125-B38C-C896552EB798}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80D068D2-C5F7-4125-B38C-C896552EB798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D068D2-C5F7-4125-B38C-C896552EB798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D068D2-C5F7-4125-B38C-C896552EB798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D068D2-C5F7-4125-B38C-C896552EB798}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB47FBE1-A8DD-41D9-890F-4C747563E3BD}
+	EndGlobalSection
+EndGlobal
